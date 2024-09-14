@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-FIT</title>
+    <link rel="icon" href="icon.png" type="image/png"> <!-- Replace 'icon.png' with your actual icon file path -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#000;/* Replace 'background.jpg' with your background image file path */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #fff;
+            margin-top: 20px;
+        }
+        #icon {
+            width: 150px; /* Adjust icon size as needed */
+            margin: 20px auto;
+            display: block;
+        }
+        #counter {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #007bff;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .instructions {
+            margin-top: 40px;
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for instructions */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+ 
+</head>
+<body>
+    <h1>VIRTUAL - TRAINER</h1>
+    <div class="container">
+        <div class="column">
+            <img id="icon" src="https://pixahive.com/wp-content/uploads/2021/02/Virabhadrasana-Warrior-Pose-357219-pixahive.jpg" alt="icon" style="width: 400px; float: right; margin-left: 20px;">
+        </div>
+        <div class="column">
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+        </div>
+
+       
+    </div>
+    <div class="instructions">
+        <h2>Instructions for Warrior Pose</h2>
+        
+        <p>To perform the Warrior Pose (Virabhadrasana) correctly:</p>
+        <ol>
+            <li>Stand with your feet about 3-4 feet apart, with your right foot facing forward and your left foot turned slightly inward.</li>
+            <li>Raise your arms parallel to the floor, with your palms facing down.</li>
+            <li>Bend your right knee over your right ankle, making sure your thigh is parallel to the floor.</li>
+            <li>Keep your left leg straight and grounded, pressing firmly into the mat.</li>
+            <li>Turn your head to look over your right hand and hold the pose for 20-30 seconds.</li>
+            <li>Release the pose and repeat on the opposite side.</li>
+        </ol>
+        <p>Ensure to keep your torso upright, avoid leaning forward, and focus on your breath while holding the pose.</p>
+
+    </div>
+</body>
+</html>
+
+ 
+ 
+
+ 
