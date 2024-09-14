@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-FIT</title>
+    <link rel="icon" href="icon.png" type="image/png"> <!-- Replace 'icon.png' with your actual icon file path -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#000;/* Replace 'background.jpg' with your background image file path */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #fff;
+            margin-top: 20px;
+        }
+        #icon {
+            width: 150px; /* Adjust icon size as needed */
+            margin: 20px auto;
+            display: block;
+        }
+        #counter {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #007bff;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .instructions {
+            margin-top: 40px;
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for instructions */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .games-list{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 4rem;
+        }
+        #games-list button{
+          background-color: #95c11e;
+          color: #000;
+          font-weight: 700;
+          padding: 1rem 2rem;
+          border-radius: 0.5rem;
+          cursor: pointer;
+        }
+        #games-list button:hover{
+          background-color: #88a832;
+        }
+
+        .note{
+          text-align: center;
+          color: white;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>PLAY-FIT</h1>
+    <div class="container">
+        <!-- <div class="column">
+            <img id="icon" src="https://pixahive.com/wp-content/uploads/2021/02/Virabhadrasana-Warrior-Pose-357219-pixahive.jpg" alt="icon" style="width: 400px; float: right; margin-left: 20px;">
+        </div> -->
+        <div class="column">
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed" width="700px">
+        </div>
+
+       
+    </div>
+
+    <p class="note">NOTE: Please align yourself with center of the camera</p>
+    <p class="note">And choose the game you want to play</p>
+
+    <div id="games-list">
+      <a href="https://subwaysurf.io/play" target="_blank">
+        <button>SUBWAY SURFERS</button>
+      </a>
+
+      <a href="https://poki.com/en/g/temple-run-2" target="_blank"></a>
+        <button>TEMPLE RUN</button>
+      </a>
+
+    </div>
+
+</body>
+</html>
+
+ 
+ 
+
+ 
